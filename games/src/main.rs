@@ -9,7 +9,7 @@ use std::io;
 
 // Import the game files
 mod guess_game;
-
+mod hangman_game;
 
 // Start point
 fn main() {
@@ -22,6 +22,7 @@ fn main() {
                 break;
             }
             1 => guess_game::game(),
+            2 => hangman_game::game(),
             _ => println!("The game is not ready yet!!"),
         }
     }
